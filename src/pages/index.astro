@@ -1,0 +1,25 @@
+---
+import Base from '@layouts/Base.astro';
+
+let post = await Astro.glob('./posts/*.md');
+import { formatDate } from '@layouts/BlogPost.astro';
+---
+
+<Base title='first blog'>
+	<h1 class='text-4xl font-bold text-primary dark:text-secondary text-center'>
+		Welcome to my personal blog
+	</h1>
+	{
+		post.map((post) => (
+			<div class='container text-primary dark:text-secondary'>
+				<a
+					class='text-4xl uppercase hover:underline font-semibold'
+					href={post.url}
+				>
+					{post.frontmatter.title}
+				</a>
+				<p class=''>{formatDate(post.frontmatter.date)}</p>
+			</div>
+		))
+	}
+</Base>

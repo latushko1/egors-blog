@@ -1,0 +1,27 @@
+---
+import Base from './Base.astro';
+
+const { title, date } = Astro.props.frontmatter;
+
+export const formatDate = (date: string): string => {
+	return new Date(date).toLocaleDateString('en-UK', {
+		year: 'numeric',
+		month: 'long',
+		day: 'numeric',
+	});
+};
+---
+
+<Base title='blog post'>
+	<div class='text-primary dark:text-secondary pt-8'>
+		<div class='container'>
+			<h1 class='text-5xl font-bold leading-10 uppercase'>{title}</h1>
+			<p class='mt-[10px] mb-[25px]'>{formatDate(date)}</p>
+		</div>
+		<div
+			class='prose container text-center items-center grid place-items-center'
+		>
+			<slot />
+		</div>
+	</div>
+</Base>
