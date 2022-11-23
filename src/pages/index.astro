@@ -3,25 +3,45 @@ import Base from '@layouts/Base.astro';
 
 let post = await Astro.glob('./posts/*.md');
 import { formatDate } from '@layouts/BlogPost.astro';
+let postLen = 0;
 ---
 
 <Base title='first blog'>
 	<h1 class='text-4xl font-bold text-primary dark:text-secondary text-center'>
 		Welcome to my personal blog
 	</h1>
-	<section class='grid justify-start mt-12'>
+	<article class='grid justify-start mt-12 max-w-3xl lg:grid-cols-2 mx-auto'>
 		{
 			post.map((post) => (
-				<div class='container text-primary dark:text-secondary max-w-[550px] py-2 '>
-					<a
-						class='text-4xl uppercase hover:underline font-semibold'
-						href={post.url}
-					>
+				// <div class='text-primary dark:text-secondary text-center p-6 '>
+				// 	<img
+				// 		class='rounded-xl'
+				// 		src={post.frontmatter.image}
+				// 		alt={`postImage ${postLen++}`}
+				// 	/>
+				// 	<a
+				// 		class='text-4xl uppercase hover:underline font-semibold'
+				// 		href={post.url}
+				// 	>
+				// 		{post.frontmatter.title}
+				// 	</a>
+				// 	<p class=''>{formatDate(post.frontmatter.date)}</p>
+				// </div>
+				<a
+					class='text-primary dark:text-secondary text-center p-6 '
+					href={post.url}
+				>
+					<img
+						class='rounded-xl'
+						src={post.frontmatter.image}
+						alt={`postImage ${postLen++}`}
+					/>
+					<h4 class='text-3xl uppercase  font-bold'>
 						{post.frontmatter.title}
-					</a>
+					</h4>
 					<p class=''>{formatDate(post.frontmatter.date)}</p>
-				</div>
+				</a>
 			))
 		}
-	</section>
+	</article>
 </Base>

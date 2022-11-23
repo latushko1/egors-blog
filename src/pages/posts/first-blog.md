@@ -2,7 +2,7 @@
 layout: '../../layouts/BlogPost.astro'
 title: first blog
 date: 2022-11-22
-image: '/public/images/1.png'
+image: '/images/1.png'
 ---
 
 # Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus enim purus, elementum in sapien nec, maximus aliquam odio. Nullam tempor tincidunt dapibus. Integer placerat tellus sit amet enim tincidunt, non suscipit tellus semper. Ut et quam aliquam, convallis eros vitae, lobortis lacus. Sed fermentum diam ut neque dignissim cursus. Quisque fringilla ut felis vel posuere. Mauris justo ipsum, ultrices non imperdiet non, volutpat ut dui. Phasellus a nibh risus. Duis convallis dapibus libero, pretium cursus leo mollis a. Vestibulum tempor dolor in mollis tempor. Ut in augue quis tellus aliquet elementum. Aliquam interdum risus quis lacus varius, ac suscipit massa mollis.
