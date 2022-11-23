@@ -6,29 +6,17 @@ import { formatDate } from '@layouts/BlogPost.astro';
 let postLen = 0;
 ---
 
-<Base title='first blog'>
-	<h1 class='text-4xl font-bold text-primary dark:text-secondary text-center'>
+<Base title='Welcome'>
+	<h1
+		class='text-4xl font-black text-primary dark:text-secondary text-center uppercase'
+	>
 		Welcome to my personal blog
 	</h1>
 	<article class='grid justify-start mt-12 max-w-3xl lg:grid-cols-2 mx-auto'>
 		{
 			post.map((post) => (
-				// <div class='text-primary dark:text-secondary text-center p-6 '>
-				// 	<img
-				// 		class='rounded-xl'
-				// 		src={post.frontmatter.image}
-				// 		alt={`postImage ${postLen++}`}
-				// 	/>
-				// 	<a
-				// 		class='text-4xl uppercase hover:underline font-semibold'
-				// 		href={post.url}
-				// 	>
-				// 		{post.frontmatter.title}
-				// 	</a>
-				// 	<p class=''>{formatDate(post.frontmatter.date)}</p>
-				// </div>
 				<a
-					class='text-primary dark:text-secondary text-center p-6 '
+					class='text-primary dark:text-secondary text-center p-6 hover:scale-105 transition-all'
 					href={post.url}
 				>
 					<img
@@ -36,9 +24,7 @@ let postLen = 0;
 						src={post.frontmatter.image}
 						alt={`postImage ${postLen++}`}
 					/>
-					<h4 class='text-3xl uppercase  font-bold'>
-						{post.frontmatter.title}
-					</h4>
+					<h4 class='text-3xl font-bold'>{post.frontmatter.title}</h4>
 					<p class=''>{formatDate(post.frontmatter.date)}</p>
 				</a>
 			))
