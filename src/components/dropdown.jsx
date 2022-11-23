@@ -45,34 +45,27 @@ function Dropdown() {
 				>
 					<div class='py-1' role='none'>
 						<a
-							href='#about'
+							href='/'
 							onClick={() => setOpen(!open)}
 							class='dark:text-primary text-secondary block px-4 py-2 text-sm hover:text-secondary dark:hover:text-primary'
 							role='menuitem'
 							tabindex='-1'
 							id='menu-item-0'
 						>
-							About
+							Home
 						</a>
+					</div>
+
+					<div class='py-1' role='none'>
 						<a
-							href='#works'
+							href='https://egors-homepage.vercel.app/'
 							onClick={() => setOpen(!open)}
 							class='dark:text-primary text-secondary block px-4 py-2 text-sm hover:text-secondary dark:hover:text-primary'
 							role='menuitem'
 							tabindex='-1'
-							id='menu-item-1'
+							id='menu-item-0'
 						>
-							Works
-						</a>
-						<a
-							href='#links'
-							onClick={() => setOpen(!open)}
-							class='dark:text-primary text-secondary block px-4 py-2 text-sm hover:text-secondary dark:hover:text-primary'
-							role='menuitem'
-							tabindex='-1'
-							id='menu-item-2'
-						>
-							Links
+							Website
 						</a>
 					</div>
 				</div>

@@ -9,17 +9,19 @@ import { formatDate } from '@layouts/BlogPost.astro';
 	<h1 class='text-4xl font-bold text-primary dark:text-secondary text-center'>
 		Welcome to my personal blog
 	</h1>
-	{
-		post.map((post) => (
-			<div class='container text-primary dark:text-secondary'>
-				<a
-					class='text-4xl uppercase hover:underline font-semibold'
-					href={post.url}
-				>
-					{post.frontmatter.title}
-				</a>
-				<p class=''>{formatDate(post.frontmatter.date)}</p>
-			</div>
-		))
-	}
+	<section class='grid justify-start mt-12'>
+		{
+			post.map((post) => (
+				<div class='container text-primary dark:text-secondary max-w-[550px] py-2 '>
+					<a
+						class='text-4xl uppercase hover:underline font-semibold'
+						href={post.url}
+					>
+						{post.frontmatter.title}
+					</a>
+					<p class=''>{formatDate(post.frontmatter.date)}</p>
+				</div>
+			))
+		}
+	</section>
 </Base>
