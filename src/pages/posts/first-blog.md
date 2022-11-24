@@ -4,9 +4,6 @@ title: How I create My personal website
 date: 2022-11-22
 image: '/images/1.png'
 ---
-
-# how i create my personal web site
-
 ### I used the following technologies to create the site:
 
 1.next js <br>
