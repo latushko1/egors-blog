@@ -14,7 +14,7 @@ image: '/images/1.png'
 3.framer motion<br>
 4.typescript<br>
 <br>
-![Main screen the homepage](/public/images/1.png)<br>
+![Main screen the homepage](/images/1.png)<br>
 As a novice developer, I was very eager to create something of my own and unique, leave a mark on the Internet and finally show the world what I create
 looking at those sites that beginners create, I realized that originality is needed, it is necessary to show the user how I actually have an idea, create and implement a project, so I decided to show you how I work
 <br>
