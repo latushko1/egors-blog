@@ -4,6 +4,7 @@ import Header from '@components/header';
 interface Props {
 	title: string;
 }
+import '@fontsource/syne';
 ---
 
 <!DOCTYPE html>
@@ -47,4 +48,12 @@ interface Props {
 	} else {
 		document.documentElement.classList.add('dark');
 	}
+
+	document.documentElement.classList.add();
 </script>
+
+<style>
+	body {
+		font-family: 'Syne', sans-serif;
+	}
+</style>

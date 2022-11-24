@@ -10,6 +10,7 @@ export const formatDate = (date: string): string => {
 		day: 'numeric',
 	});
 };
+import '@fontsource/syne';
 ---
 
 <Base title={title}>
@@ -25,3 +26,9 @@ export const formatDate = (date: string): string => {
 		</article>
 	</div>
 </Base>
+
+<style>
+	body {
+		font-family: 'Syne', sans-serif;
+	}
+</style>

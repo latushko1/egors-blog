@@ -4,12 +4,11 @@ import Base from '@layouts/Base.astro';
 let post = await Astro.glob('./posts/*.md');
 import { formatDate } from '@layouts/BlogPost.astro';
 let postLen = 0;
+import '@fontsource/syne';
 ---
 
 <Base title='Welcome'>
-	<h1
-		class='text-4xl font-black text-primary dark:text-secondary text-center uppercase'
-	>
+	<h1 class='text-4xl font-black text-primary dark:text-secondary text-center'>
 		Welcome to my personal blog
 	</h1>
 	<article class='grid justify-start mt-12 max-w-3xl lg:grid-cols-2 mx-auto'>
@@ -31,3 +30,9 @@ let postLen = 0;
 		}
 	</article>
 </Base>
+
+<style>
+	body {
+		font-family: 'Syne', sans-serif;
+	}
+</style>

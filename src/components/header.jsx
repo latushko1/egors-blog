@@ -29,10 +29,12 @@ function Header() {
 	return (
 		<div className='fixed w-full z-50'>
 			<div className='flex justify-between items-center py-2 backdrop-blur-md'>
-				<div className='flex gap-2 items-center'>
-					<img alt='logo' src={Logo} />
-					<h4 className='text-base font-bold text-white'>Egor Latushko</h4>
-				</div>
+				<a href='/'>
+					<div className='flex gap-2 items-center'>
+						<img alt='logo' src={Logo} />
+						<h4 className='text-base font-bold text-white'>Egor Latushko</h4>
+					</div>
+				</a>
 
 				<div className='mr-4 flex gap-2 items-center'>
 					<button

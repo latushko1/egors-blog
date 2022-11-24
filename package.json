@@ -14,6 +14,7 @@
     "@astrojs/image": "^0.11.6",
     "@astrojs/react": "^1.2.2",
     "@astrojs/tailwind": "^2.1.2",
+    "@fontsource/syne": "^4.5.11",
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.9",
     "astro": "^1.6.10",
